@@ -1,0 +1,17 @@
+1.There is no difference between addition and subtraction operation for all elements of GF(3).
+--> False. 1+2 = 0 mod 3 while 1 - 2 = 2 mod 3
+
+2.There is no difference between addition and subtraction operation for all elements of GF(2N), for any integer N.
+--> True. Because GF(2N) is an extension field where all addition subtraction operations are done using bitwise XOR on the corresponding coefficient.
+
+3.For all elements of GF(2), multiplication is equivalent to an AND gate.
+--> True, we can easily see the multiplication table of GF(2) below and see that it is equal to truth table of AND gate.
+x	0	1	
+0	0	0
+1	0	1
+
+4.A polynomial of degree 8 is a possible element of the field GF(2^8).
+--> False. In a field of GF(2^8), the highest degree of any polynomial is 7.
+
+5.P(x) = x^4 + x^3 + x + 1 is a irreducible polynomial.
+--> False. The polynomial can be factorised into (x+1)(x+1)(x^2 -x + 1). therefore it is not irreducible.
